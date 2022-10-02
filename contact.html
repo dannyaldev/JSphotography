@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/utilities.css" />
+    <title>Jo smith photograpgy</title>
+    <script
+      src="https://kit.fontawesome.com/e25e6308f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <style>
+    .contact-tag {
+      z-index: 100;
+      color: white;
+      position: relative;
+      text-align: center;
+      margin: 60px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .contact-tag h1 {
+      border-bottom: white 2px solid;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      padding: 60px;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+
+    .contact-menu {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .contact-menu li {
+      display: inline-block;
+    }
+    .contact-menu .menu-item {
+      padding: 0px 10px 5px 10px;
+    }
+    .contact-menu .menu-item a {
+      color: white;
+    }
+    .contact-menu .active {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-top-left-radius: 20px;
+      position: relative;
+    }
+    .contact-menu .active i {
+      padding: 25px 0px 0px;
+    }
+
+    .contact-content {
+      padding: 40px;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      flex-direction: column;
+      width: 600px;
+      height: 400px;
+      color: white;
+      border-radius: 24px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .contact-content p {
+      padding: 40px;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .profile-picture {
+      width: 80px;
+      height: 80px;
+      border-radius: 50px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .contact-services {
+      text-align: center;
+    }
+    .contact-services h1 {
+      margin-bottom: 40px;
+    }
+    .contact-services ul {
+      list-style: disc;
+      padding: 20px;
+      text-align: left;
+    }
+    .contact-services li {
+      list-style: decimal;
+    }
+
+    .contact-form form label {
+      margin-bottom: 3px;
+    }
+    .contact-form form input {
+      display: block;
+      padding: 6px;
+      border-radius: 24px;
+      border-style: none;
+      outline-color: orange;
+      padding: 5px 0px 5px 20px;
+    }
+    .contact-form button {
+      background-color: transparent;
+      border-radius: 20px;
+      padding: 12px 20px;
+      border-style: solid;
+      cursor: pointer;
+      position: relative;
+    }
+    .contact-form .message-area {
+      border-style: none;
+      border-radius: 10px;
+      outline-color: orange;
+      padding: 20px;
+      resize: none;
+      width: 80%;
+    }
+    .contact-form .inputs {
+      font-family: 'Montserrat';
+      resize: none;
+      border-style: none;
+      border-radius: 10px;
+      outline-color: orange;
+      padding: 5px 0px 5px 20px;
+    }
+    .contact-form .form-btn:hover {
+      background-color: orange;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .contact-tag {
+        font-size: 16px;
+      }
+
+      .contact-content{
+        width: 400px;
+      }
+      .contact-content p {
+        margin-top: 20px;
+        padding: 0;
+        text-align: center;
+        font-size: 13px;
+      }
+    }
+    @media only screen and (max-width: 578px) {
+      .profile-picture {
+        display: none;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav">
+          <ul class="nav-social-icons">
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-instagram fa-xl nav-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter fa-xl nav-icon"></i></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-pinterest fa-xl nav-icon"></i
+              ></a>
+            </li>
+          </ul>
+
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-logo">
+          <a href="index.html"><img src="/assets/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="mobile-nav-toggle">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="contact-container flex flex-center">
+      <div class="contact-menu">
+        <ul>
+          <li id="profileBtn" class="menu-item active">
+            <a href="#"><i class="far fa-user-circle fa-2x"></i></a>
+          </li>
+          <li id="servicesBtn" class="menu-item">
+            <a href="#"><i class="fas fa-camera-retro fa-2x"></i></a>
+          </li>
+          <li id="contactBtn" class="menu-item">
+            <a href="#"><i class="far fa-envelope fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="content" class="contact-content">
+        <div id="aboutMe" class="about-me hide">
+          <h1>Hi, I'm Joanne.</h1>
+          <div class="profile-picture">
+            <img src="/assets/pfp.png" alt="" />
+          </div>
+          <p>
+            A Professional photographer based in Dundee, Scotland, able to
+            capture cultivating images of the great outdoors, from buildings to
+            nature and everything in between. I also do wedding photography,
+            ready to catch all the perfect moments of your special day
+          </p>
+        </div>
+
+        <div id="contactFrm" class="contact-form hide">
+          <form action="">
+            <label for="">Name</label>
+            <input type="text" />
+            <label for="">Email</label>
+            <input type="text" />
+            <label for="">Message</label>
+            <br />
+            <textarea
+              placeholder=""
+              class="message-area"
+              cols="60"
+              rows="8"
+            ></textarea>
+            <br />
+
+            <button class="form-btn">Submit</button>
+          </form>
+        </div>
+
+        <div id="services" class="contact-services hide">
+          <h1>Services</h1>
+          <div class="flex">
+            <ul>
+              <li>Photo Framing</li>
+              <li>Wedding Photoghraphy</li>
+              <li>Private Events £40/hr</li>
+              <li>Short-term contractual £25</li>
+              <li>Long-term negotiable</li>
+            </ul>
+            <ul>
+              <li>Photo Framing</li>
+              <li>Wedding Photoghraphy</li>
+              <li>Private Events £40/hr</li>
+              <li>Short-term contractual £25</li>
+              <li>Long-term negotiable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer >
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/assets/logo.svg" alt="" />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-instagram fa-xl nav-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter fa-xl nav-icon"></i></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-pinterest fa-xl nav-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/nav.js"></script>
+    <script src="/scripts/contact.js"></script>
+  </body>
+</html>

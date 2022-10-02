@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/utilities.css" />
+    <title>Jo smith photograpgy</title>
+    <script
+      src="https://kit.fontawesome.com/e25e6308f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav">
+          <ul class="nav-social-icons">
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-instagram fa-xl nav-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter fa-xl nav-icon"></i></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-pinterest fa-xl nav-icon"></i
+              ></a>
+            </li>
+          </ul>
+
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-logo">
+          <a href="index.html"><img src="/assets/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="mobile-nav-toggle">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="bg-img"></div>
+    <section>
+      <div class="slideshow-container">
+        <div class="image-slideshow">
+          <img
+            id="imageCarousel"
+            class="image-banner"
+            src="/assets/images/photography/landscape0.jpg"
+            alt="image carousel"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-container">
+      <div class="filter-menu">
+        <div class="menu-icon active">
+          <img id="ringIcon" src="/assets/ringsg.svg" alt="" />
+        </div>
+        <div class="menu-icon">
+          <img
+            class="tree-icon"
+            id="treeIcon"
+            src="/assets/treesg.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div id="gallery" class="grid"></div>
+
+      <div class="flex flex-center items-center">
+        <button class="load-btn tag-btn" id="loadMore">Load More</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/assets/logo.svg" alt="" />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-instagram fa-xl nav-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter fa-xl nav-icon"></i></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-pinterest fa-xl nav-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/nav.js"></script>
+
+    <script src="/scripts/gallery.js"></script>
+  </body>
+</html>
