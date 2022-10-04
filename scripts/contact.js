@@ -1,6 +1,5 @@
 const contactMenu = document.querySelectorAll('.menu-item');
 const content = document.getElementById('content');
-
 const aboutMe = document.getElementById('aboutMe');
 const services = document.getElementById('services');
 const cotnactFrm = document.getElementById('contactFrm');
