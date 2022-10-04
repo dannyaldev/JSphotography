@@ -12,160 +12,6 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
-  <style>
-    .contact-tag {
-      z-index: 100;
-      color: white;
-      position: relative;
-      text-align: center;
-      margin: 60px;
-      font-size: 30px;
-      font-weight: bold;
-    }
-    .contact-tag h1 {
-      border-bottom: white 2px solid;
-    }
-
-    .contact-container {
-      display: flex;
-      justify-content: center;
-      padding: 60px;
-      align-items: center;
-      flex-direction: column;
-      margin-bottom: 100px;
-    }
-
-    .contact-menu {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .contact-menu li {
-      display: inline-block;
-    }
-    .contact-menu .menu-item {
-      padding: 0px 10px 5px 10px;
-    }
-    .contact-menu .menu-item a {
-      color: white;
-    }
-    .contact-menu .active {
-      background-color: rgba(0, 0, 0, 0.5);
-      border-top-left-radius: 20px;
-      position: relative;
-    }
-    .contact-menu .active i {
-      padding: 25px 0px 0px;
-    }
-
-    .contact-content {
-      padding: 40px;
-      display: flex;
-      flex-shrink: 0;
-      align-items: center;
-      flex-direction: column;
-      width: 600px;
-      height: 400px;
-      color: white;
-      border-radius: 24px;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-    .contact-content p {
-      padding: 40px;
-    }
-
-    .about-me {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .profile-picture {
-      width: 80px;
-      height: 80px;
-      border-radius: 50px;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-
-    .contact-services {
-      text-align: center;
-    }
-    .contact-services h1 {
-      margin-bottom: 40px;
-    }
-    .contact-services ul {
-      list-style: disc;
-      padding: 20px;
-      text-align: left;
-    }
-    .contact-services li {
-      list-style: decimal;
-    }
-
-    .contact-form form label {
-      margin-bottom: 3px;
-    }
-    .contact-form form input {
-      display: block;
-      padding: 6px;
-      border-radius: 24px;
-      border-style: none;
-      outline-color: orange;
-      padding: 5px 0px 5px 20px;
-    }
-    .contact-form button {
-      background-color: transparent;
-      border-radius: 20px;
-      padding: 12px 20px;
-      border-style: solid;
-      cursor: pointer;
-      position: relative;
-    }
-    .contact-form .message-area {
-      border-style: none;
-      border-radius: 10px;
-      outline-color: orange;
-      padding: 20px;
-      resize: none;
-      width: 80%;
-    }
-    .contact-form .inputs {
-      font-family: 'Montserrat';
-      resize: none;
-      border-style: none;
-      border-radius: 10px;
-      outline-color: orange;
-      padding: 5px 0px 5px 20px;
-    }
-    .contact-form .form-btn:hover {
-      background-color: orange;
-    }
-
-    @media only screen and (max-width: 768px) {
-      .contact-tag {
-        font-size: 16px;
-      }
-
-      .contact-content{
-        width: 400px;
-      }
-      .contact-content p {
-        margin-top: 20px;
-        padding: 0;
-        text-align: center;
-        font-size: 13px;
-      }
-    }
-    @media only screen and (max-width: 578px) {
-      .profile-picture {
-        display: none;
-      }
-    }
-  </style>
-
   <body>
     <header>
       <nav class="navbar">
@@ -246,11 +92,9 @@
               rows="8"
             ></textarea>
             <br />
-
             <button class="form-btn">Submit</button>
           </form>
         </div>
-
         <div id="services" class="contact-services hide">
           <h1>Services</h1>
           <div class="flex">
@@ -272,8 +116,7 @@
         </div>
       </div>
     </div>
-
-    <footer >
+    <footer>
       <div class="footer-container">
         <div class="footer-logo">
           <img src="/assets/logo.svg" alt="" />
