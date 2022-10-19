@@ -1,7 +1,12 @@
-const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.header-nav');
+const navBtn = document.querySelector('.nav-menu-btn');
 
-mobileNavToggle.addEventListener('click', () => {
+navBtn.addEventListener('click', () => {
   nav.classList.toggle('active');
-  document.body.classList.toggle('disable-scroll');
+
+  if (navBtn.name === 'menu-outline') {
+    navBtn.name = 'close-outline';
+  } else {
+    navBtn.name = 'menu-outline';
+  }
 });
